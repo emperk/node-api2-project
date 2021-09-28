@@ -27,18 +27,18 @@ Your assignment page on Canvas should contain instructions for submitting this p
 
 #### 1 [GET] /api/posts
 
-- If there's an error in retrieving the _posts_ from the database:
+- [X] If there's an error in retrieving the _posts_ from the database:
   - respond with HTTP status code `500`.
   - return the following JSON: `{ message: "The posts information could not be retrieved" }`.
 
 #### 2 [GET] /api/posts/:id
 
-- If the _post_ with the specified `id` is not found:
+- [] If the _post_ with the specified `id` is not found:
 
   - return HTTP status code `404` (Not Found).
   - return the following JSON: `{ message: "The post with the specified ID does not exist" }`.
 
-- If there's an error in retrieving the _post_ from the database:
+- [] If there's an error in retrieving the _post_ from the database:
   - respond with HTTP status code `500`.
   - return the following JSON: `{ message: "The post information could not be retrieved" }`.
 
