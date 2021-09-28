@@ -33,23 +33,23 @@ Your assignment page on Canvas should contain instructions for submitting this p
 
 #### 2 [GET] /api/posts/:id
 
-- [] If the _post_ with the specified `id` is not found:
+- [X] If the _post_ with the specified `id` is not found:
 
   - return HTTP status code `404` (Not Found).
   - return the following JSON: `{ message: "The post with the specified ID does not exist" }`.
 
-- [] If there's an error in retrieving the _post_ from the database:
+- [X] If there's an error in retrieving the _post_ from the database:
   - respond with HTTP status code `500`.
   - return the following JSON: `{ message: "The post information could not be retrieved" }`.
 
 #### 3 [POST] /api/posts
 
-- If the request body is missing the `title` or `contents` property:
+- [] If the request body is missing the `title` or `contents` property:
 
   - respond with HTTP status code `400` (Bad Request).
   - return the following JSON: `{ message: "Please provide title and contents for the post" }`.
 
-- If the information about the _post_ is valid:
+- [] If the information about the _post_ is valid:
 
   - save the new _post_ the the database.
   - return HTTP status code `201` (Created).
